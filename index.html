@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        Equities Tracker
+
+        <label for="alphavantage_key">Enter API Key Here:</label>
+        <input id="alphavantage_key" name="alphavantage_key">
+    </div>
+    <div class="body-container">
+        <label class="CP">Current Price:</label>
+        <label for="ticker">Ticker</label>
+        <input type="text" id="ticker" name="ticker">
+        <button class="fetch-data">Fetch Data</button>
+
+        <label for="entry_price">Entry Price Per Share:</label>
+        <input type="double" id="entry_price" name="entry_price">
+
+
+        <label for="Buy_Sell">Pick Option:</label>
+        <select id="Buy_Sell" name="Buy_Sell">
+            <option value="Buy">BUY</option>
+            <option value="Sell">SELL</option>
+        </select>
+
+
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
